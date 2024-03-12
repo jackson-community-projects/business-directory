@@ -16,11 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full w-full max-w-[100vw] overflow-x-hidden">
+    <html
+      lang="en"
+      className="h-full min-h-[100vh] w-full max-w-[100vw] overflow-hidden"
+    >
       <body
         className={classNames(
           inter.className,
-          "flex h-full w-auto min-w-[500px] flex-col overflow-x-hidden",
+          "flex h-full w-full min-w-[500px] flex-col",
         )}
       >
         {children}
