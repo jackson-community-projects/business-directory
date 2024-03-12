@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="h-full min-h-[100vh] w-full max-w-[100vw] overflow-hidden"
+      className="h-full min-h-[100vh] w-full max-w-[100vw] overflow-x-hidden"
     >
       <body
         className={classNames(
