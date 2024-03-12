@@ -32,7 +32,7 @@ const Header = () => {
           width={192}
           height={192}
           className="mx-auto h-48 w-auto p-4"
-          src="/images/logo.webp"
+          src="images/logo.webp"
           alt="Jackson Business Direcotry"
         />
         <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-5xl">

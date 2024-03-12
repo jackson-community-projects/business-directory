@@ -13,47 +13,47 @@ const businesses = [
   {
     name: "Kind Closet",
     categories: ["Clothing", "Retail"],
-    image: "/images/kindclosetllc.jpeg",
+    image: "images/kindclosetllc.jpeg",
   },
   {
     name: "Cosmos & Clover",
     categories: ["Clothing", "Retail"],
-    image: "/images/cosmos+clover.jpeg",
+    image: "images/cosmos+clover.jpeg",
   },
   {
     name: "Bob's Fleet Supply",
     categories: ["Clothing", "Retail"],
-    image: "/images/bobsfleet.jpeg",
+    image: "images/bobsfleet.jpeg",
   },
   {
     name: "Smokin' Java",
     categories: ["Coffee", "Food", "Drink"],
-    image: "/images/smokinjava.jpeg",
+    image: "images/smokinjava.jpeg",
   },
   {
     name: "Cabin Coffee",
     categories: ["Coffee", "Food", "Drink"],
-    image: "/images/cabincoffee.png",
+    image: "images/cabincoffee.png",
   },
   {
     name: "Pillars Pub & Eatery",
     categories: ["Food", "Bar"],
-    image: "/images/pillars.jpg",
+    image: "images/pillars.jpg",
   },
   {
     name: "Kat's Hog Heaven",
     categories: ["Food", "Drink"],
-    image: "/images/katshogheaven.jpeg",
+    image: "images/katshogheaven.jpeg",
   },
   {
     name: "A Pet's Tale",
     categories: ["Pet Supplies", "Dog Food", "Cat Food"],
-    image: "/images/apetstale.jpg",
+    image: "images/apetstale.jpg",
   },
   {
     name: "Exit Realty",
     categories: ["Real Estate", "Housing"],
-    image: "/images/exit.png",
+    image: "images/exit.png",
   },
 ];
 
