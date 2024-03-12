@@ -1,12 +1,13 @@
 "use client";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "@/components/utilities";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Events", href: "/events" },
+  // { name: "Home", href: "/" },
+  // { name: "Events", href: "/events" },
 ];
 
 export default function Navbar() {
@@ -30,10 +31,12 @@ export default function Navbar() {
                 <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static">
                   <div className="flex flex-shrink-0 items-center">
                     <a href="#">
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=emerald&shade=600"
-                        alt="Your Company"
+                      <Image
+                        width={64}
+                        height={64}
+                        className="h-16 w-auto"
+                        src="/images/logo.webp"
+                        alt="Jackson Business Direcotry"
                       />
                     </a>
                   </div>

@@ -10,7 +10,7 @@ const PrimaryLayout = ({
   return (
     <>
       <SiteNotification />
-      <Navbar />
+      {/* <Navbar /> */}
       {children}
       <Footer />
     </>

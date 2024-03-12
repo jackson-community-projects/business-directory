@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 const Header = () => {
   return (
-    <div className="relative isolate -z-10 flex min-h-96 flex-col items-center justify-center overflow-hidden bg-white px-6 lg:px-8">
+    <div className="relative isolate -z-10 flex min-h-[490px] flex-grow flex-col items-center justify-center overflow-clip bg-white px-6 lg:px-8">
       <div
-        className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+        className="hidden h-full sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
       >
         <div
@@ -25,7 +27,14 @@ const Header = () => {
           }}
         />
       </div>
-      <div className="mx-auto max-w-2xl text-center">
+      <div className="mx-auto h-full max-w-2xl text-center">
+        <Image
+          width={192}
+          height={192}
+          className="mx-auto h-48 w-auto p-4"
+          src="/images/logo.webp"
+          alt="Jackson Business Direcotry"
+        />
         <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-5xl">
           Discover the essence of Jackson, MN.
         </h2>

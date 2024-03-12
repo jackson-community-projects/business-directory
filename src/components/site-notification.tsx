@@ -11,10 +11,10 @@ type event = {
   };
 };
 const event: event = {
-  name: "2024 Farm & Home Show",
-  date: "Feburary 24th",
-  location: "JCC High School",
-  description: "Join us to see what’s coming next.",
+  name: "Coming Soon",
+  date: "Summer 2024",
+  location: "",
+  description: "",
   // cta: {
   //   label: "Learn more",
   //   url: "/events/2024-farm-home-show",
@@ -58,7 +58,7 @@ const SiteNotification = () => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          {event.location} {event.date}. {event.description}
+          {event.location} {event.date} {event.description}
         </p>
         {event.cta && (
           <a
