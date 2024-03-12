@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={classNames(
           inter.className,
-          "flex h-full w-auto min-w-[500px] flex-col overflow-x-hidden",
+          "flex h-full w-auto min-w-[400px] flex-col overflow-x-hidden",
         )}
       >
         {children}
