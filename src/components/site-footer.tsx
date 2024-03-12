@@ -2,7 +2,7 @@ const navigation = [
   {
     name: "Facebook",
     href: "https://www.facebook.com/people/Main-Street-Jackson-MN/61556027017245/",
-    icon: (props) => (
+    icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
           fillRule="evenodd"
@@ -37,7 +37,7 @@ const navigation = [
   {
     name: "GitHub",
     href: "https://github.com/jackson-community-projects",
-    icon: (props) => (
+    icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
           fillRule="evenodd"

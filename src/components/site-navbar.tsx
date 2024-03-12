@@ -5,7 +5,7 @@ import { Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "@/components/utilities";
 
-const navigation = [
+const navigation: any[] = [
   // { name: "Home", href: "/" },
   // { name: "Events", href: "/events" },
 ];

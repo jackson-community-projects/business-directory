@@ -1,4 +1,5 @@
 import { classNames } from "@/components/utilities";
+import Image from "next/image";
 
 const featuredTestimonial = {
   bussiness: "Cabin Coffee",
@@ -114,7 +115,10 @@ const Testimonials = () => {
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-              <img
+              <Image
+                width={40}
+                height={40}
+                unoptimized
                 className="h-10 w-10 flex-none rounded-full bg-gray-50"
                 src={featuredTestimonial.author.imageUrl}
                 alt=""
@@ -156,7 +160,10 @@ const Testimonials = () => {
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img
+                        <Image
+                          width={40}
+                          height={40}
+                          unoptimized
                           className="h-10 w-10 rounded-full bg-gray-50"
                           src={testimonial.author.imageUrl}
                           alt=""

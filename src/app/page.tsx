@@ -1,6 +1,7 @@
 "use client";
 import PrimaryLayout from "@/components/primary-layout";
 import { classNames } from "@/components/utilities";
+import { NextPage } from "next";
 import Image from "next/image";
 import Header from "@/components/header";
 import Testimonials from "@/components/testimonials";
@@ -56,7 +57,7 @@ const businesses = [
   },
 ];
 
-export function Template() {
+const Template = () => {
   return (
     <li className="relative animate-pulse">
       <div className="focus-within:ring-emerld-500 group flex aspect-square w-full items-center justify-center overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
@@ -65,8 +66,8 @@ export function Template() {
       <div className="mx-auto mt-2 h-4 w-48 rounded bg-zinc-300"></div>
     </li>
   );
-}
-export default function Home() {
+};
+const Page: NextPage = () => {
   const [businessQuery, setBusinessQuery] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -157,4 +158,6 @@ export default function Home() {
       <Testimonials />
     </PrimaryLayout>
   );
-}
+};
+
+export default Page;
