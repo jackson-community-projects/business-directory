@@ -14,61 +14,73 @@ const businesses = [
     name: "Kind Closet",
     categories: ["Clothing", "Retail", "Thrift Store", "Consignment"],
     image: "images/kindclosetllc.jpeg",
+    cta: "https://facebook.com/kindclosetllc",
   },
   {
     name: "Cosmos & Clover",
     categories: ["Clothing", "Retail"],
     image: "images/cosmos+clover.jpeg",
+    cta: "https://facebook.com/cosmosandcloverboutique",
   },
   {
     name: "Bob's Fleet Supply",
     categories: ["Clothing", "Retail", "Fleet Supplies"],
     image: "images/bobsfleet.jpeg",
+    cta: "https://facebook.com/bobsfleet",
   },
   {
     name: "Smokin' Java",
     categories: ["Coffee", "Food", "Drinks", "Cafe"],
     image: "images/smokinjava.jpeg",
+    cta: "https://facebook.com/thecoffeenest",
   },
   {
     name: "Cabin Coffee",
     categories: ["Coffee", "Food", "Drinks"],
     image: "images/cabincoffee.png",
+    cta: "https://facebook.com/cabincoffeejackson",
   },
   {
     name: "Pillars Pub & Eatery",
     categories: ["Food", "Bar"],
     image: "images/pillars.jpg",
+    cta: "https://www.pillarspubeatery.com",
   },
   {
     name: "Kat's Hog Heaven",
     categories: ["Food", "Drink"],
     image: "images/katshogheaven.jpeg",
+    cta: "https://facebook.com/katshogheaven",
   },
   {
     name: "A Pet's Tale",
     categories: ["Pet Supplies", "Dog Food", "Cat Food"],
     image: "images/apetstale.jpg",
+    cta: "https://www.apetstale.com",
   },
   {
     name: "Exit Realty",
     categories: ["Real Estate", "Housing"],
     image: "images/exit.png",
+    cta: "https://www.exitisgreat.com/",
   },
   {
-    name: "Dawn's Fabrics",
+    name: "Dawn's Fabrics & Yarn",
     categories: ["Fabric", "Yarns"],
     image: "",
+    cta: "https://facebook.com/profile.php?id=100057197750647",
   },
   {
     name: "TnD Crafts",
     categories: ["Crafts"],
     image: "",
+    cta: "https://facebook.com/profile.php?id=100066543970285",
   },
   {
     name: "Jackson Center for the Arts",
     categories: ["Art", "Gallery", "Classes"],
     image: "images/artcenter.jpeg",
+    cta: "https://facebook.com/jacksoncenterforthearts",
   },
 ];
 
@@ -157,14 +169,14 @@ const Page: NextPage = () => {
                       ) : (
                         <PhotoIcon className="pointer-events-none aspect-square h-24 w-24 object-cover text-zinc-300 group-hover:opacity-75" />
                       )}
-                      <button
-                        type="button"
+                      <a
+                        href={business.cta}
                         className="absolute inset-0 focus:outline-none"
                       >
                         <span className="sr-only">
                           View details for {business.name}
                         </span>
-                      </button>
+                      </a>
                     </div>
                     <p className="lead text-md pointer-events-none mt-2 block truncate text-center font-medium text-gray-900">
                       {business.name}
