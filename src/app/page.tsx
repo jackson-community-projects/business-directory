@@ -12,7 +12,7 @@ import { PhotoIcon, MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 const businesses = [
   {
     name: "Kind Closet",
-    categories: ["Clothing", "Retail"],
+    categories: ["Clothing", "Retail", "Thrift Store", "Consignment"],
     image: "images/kindclosetllc.jpeg",
   },
   {
@@ -22,17 +22,17 @@ const businesses = [
   },
   {
     name: "Bob's Fleet Supply",
-    categories: ["Clothing", "Retail"],
+    categories: ["Clothing", "Retail", "Fleet Supplies"],
     image: "images/bobsfleet.jpeg",
   },
   {
     name: "Smokin' Java",
-    categories: ["Coffee", "Food", "Drink"],
+    categories: ["Coffee", "Food", "Drinks", "Cafe"],
     image: "images/smokinjava.jpeg",
   },
   {
     name: "Cabin Coffee",
-    categories: ["Coffee", "Food", "Drink"],
+    categories: ["Coffee", "Food", "Drinks"],
     image: "images/cabincoffee.png",
   },
   {
@@ -55,7 +55,24 @@ const businesses = [
     categories: ["Real Estate", "Housing"],
     image: "images/exit.png",
   },
+  {
+    name: "Dawn's Fabrics",
+    categories: ["Fabric", "Yarns"],
+    image: "",
+  },
+  {
+    name: "TnD Crafts",
+    categories: ["Crafts"],
+    image: "",
+  },
+  {
+    name: "Jackson Center for the Arts",
+    categories: ["Art", "Gallery", "Classes"],
+    image: "images/artcenter.jpeg",
+  },
 ];
+
+businesses.sort((a, b) => a.name.localeCompare(b.name));
 
 const Template = () => {
   return (
@@ -127,15 +144,19 @@ const Page: NextPage = () => {
               <>
                 {filteredBusiness.map((business) => (
                   <li key={business.name} className="relative">
-                    <div className="focus-within:ring-emerld-500 group block aspect-square w-full overflow-hidden rounded-lg bg-gray-100 shadow-lg ring-1 ring-gray-900/5 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-                      <Image
-                        src={business.image}
-                        alt=""
-                        width={200}
-                        height={200}
-                        className="pointer-events-none aspect-square h-full w-full object-cover group-hover:opacity-75"
-                        unoptimized
-                      />
+                    <div className="focus-within:ring-emerld-500 group flex aspect-square w-full items-center justify-center overflow-hidden rounded-lg bg-gray-100 shadow-lg ring-1 ring-gray-900/5 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+                      {business.image !== "" ? (
+                        <Image
+                          src={business.image}
+                          alt=""
+                          width={200}
+                          height={200}
+                          className="pointer-events-none aspect-square h-full w-full object-cover group-hover:opacity-75"
+                          unoptimized
+                        />
+                      ) : (
+                        <PhotoIcon className="pointer-events-none aspect-square h-24 w-24 object-cover text-zinc-300 group-hover:opacity-75" />
+                      )}
                       <button
                         type="button"
                         className="absolute inset-0 focus:outline-none"
