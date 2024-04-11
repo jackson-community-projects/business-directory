@@ -82,6 +82,21 @@ const businesses = [
     image: "images/artcenter.jpeg",
     cta: "https://facebook.com/jacksoncenterforthearts",
   },
+  {
+    name: "Historic State Theatre",
+    categories: [
+      "Theatre",
+      "Theater",
+      "Cinema",
+      "Movies",
+      "silverscreen",
+      "3D",
+      "Historic",
+      "State Theatre",
+    ],
+    image: "images/hst.webp",
+    cta: "https://www.facebook.com/JacksonMovies",
+  },
 ];
 
 businesses.sort((a, b) => a.name.localeCompare(b.name));

@@ -48,7 +48,7 @@ const SiteNotification = () => {
           }}
         />
       </div>
-      <div className="ml-auto flex flex-wrap items-center gap-x-4 gap-y-2">
+      <div className="mx-auto flex flex-wrap items-center gap-x-4 gap-y-2">
         <p className="text-sm leading-6 text-zinc-100">
           <strong className="font-semibold">{event.name}</strong>
           <svg
@@ -69,7 +69,7 @@ const SiteNotification = () => {
           </a>
         )}
       </div>
-      <div className="ml-auto flex justify-end">
+      {/* <div className="ml-auto flex justify-end">
         <button
           type="button"
           className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
@@ -77,7 +77,7 @@ const SiteNotification = () => {
           <span className="sr-only">Dismiss</span>
           <XMarkIcon className="h-5 w-5 text-zinc-100" aria-hidden="true" />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
